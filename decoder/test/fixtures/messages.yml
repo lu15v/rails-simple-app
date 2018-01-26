@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  encrypted: MyString
+  decoded: MyString
+
+two:
+  encrypted: MyString
+  decoded: MyString
