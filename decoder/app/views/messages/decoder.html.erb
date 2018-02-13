@@ -1,2 +1,10 @@
-<h1>Messages#decoder</h1>
-<p>Find me in app/views/messages/decoder.html.erb</p>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <%= form_for Message.new, url: {:action => "decoder"} do |f| %>
+        <%= f.text_field :decoded %>
+          <%= f.submit "Create" %>
+    <%end%>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
