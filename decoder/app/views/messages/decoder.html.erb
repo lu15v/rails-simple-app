@@ -1,10 +1,10 @@
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Insert the word for encryption">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Encrypt</button>
-      </span>
+      <%= form_for Message.new, url: {:action => "decoder"} do |f| %>
+        <%= f.text_field :decoded %>
+          <%= f.submit "Create" %>
+    <%end%>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
